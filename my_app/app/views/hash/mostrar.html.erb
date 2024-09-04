@@ -1,0 +1,30 @@
+<!--<h1>Hash#mostrar</h1>
+<p>Find me in app/views/hash/mostrar.html.erb</p>-->
+
+<h1>HASH</h1>
+<p>Controlador Hash.</p>
+
+
+<h3>Datos de la Persona</h3>
+<% if @persona %>
+  <table>
+    <tbody>
+      <tr>
+        <td><strong>Nombre:</strong></td>
+        <td><%= @persona[:nombre] %></td>
+      </tr>
+      <tr>
+        <td><strong>Apellido:</strong></td>
+        <td><%= @persona[:apellido] %></td>
+      </tr>
+      <tr>
+        <td><strong>Teléfono:</strong></td>
+        <td><%= @persona[:telefono] %></td>
+      </tr>
+      <tr>
+        <td><strong>Correo:</strong></td>
+        <td><%= @persona[:correo] %></td>
+      </tr>
+    </tbody>
+  </table>
+<% end %>
